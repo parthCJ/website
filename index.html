@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parth - Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;1,400&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 400;
+        }
+
+
+        body {
+            background-color: rgb(15, 15, 46);
+            color: white;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 85px;
+            /* background-color: rgb(5, 5, 71); */
+            background-image: url(footer-bg.jpg);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(165, 96, 229);
+            font-size: 1.01rem;
+        }
+
+        main hr {
+            border: 0;
+            background-color: #9c97f1;
+            height: 1.2px;
+            margin: 40px 84px;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 130px 0;
+        }
+
+        .firstSection>div {
+            width: 30%;
+        }
+
+        .leftSection {
+            font-size: 2.5rem;
+        }
+
+        .leftSection .btn {
+            background-color: #0f0f2e;
+            background-image: url(footer-bg.jpg);
+            color: white;
+            border: 2px solid white;
+            font-size: 25px;
+            cursor: pointer;
+            padding: 11px;
+        }
+
+        .rightSection img {
+            /* background-color: red; */
+            width: 80%;
+            height: auto;
+        }
+
+        .purple {
+            color: rgb(165, 96, 229);
+        }
+
+        .textGray {
+            color: gray;
+        }
+
+        #element {
+            color: rgb(165, 96, 229);
+        }
+
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+            height: 100vh;
+        }
+
+        .secondSection .box {
+            background-color: white;
+            width: 80vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+
+        .secondSection .vertical {
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 120px;
+
+        }
+
+        .secondSection hr {
+            font-size: 1.9rem;
+        }
+
+        .vertical-title {
+            position: relative;
+            top: 72px;
+            width: 150px;
+            left: -17px;
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: 78px;
+            color: gray;
+            width: 150px;
+            font-size: 12px;
+            left: -27px;
+        }
+
+        .image-top {
+            width: 27px;
+            position: relative;
+            top: -24px;
+            left: -8px;
+        }
+
+        footer {
+            background-color: #0d0d26;
+            height: 233px;
+            background-image: url(footer-bg.jpg)
+        }
+
+        .footer-first {
+            position: relative;
+            left: -130px;
+        }
+
+        .footer-second {
+            position: relative;
+            top: 2px;
+        }
+
+        .footer-third {
+            position: relative;
+            top: -29px;
+            left: -156px
+        }
+
+        .footer {
+            display: flex;
+            padding: 23px 122px;
+            justify-content: space-around;
+
+        }
+
+        .footer ul {
+            list-style: none;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .footer-first {
+            position: relative;
+            left: -170px;
+        }
+
+        .linked-img {
+            position: relative;
+            left: -18px;
+            width: 15px;
+            top: 25px;
+        }
+
+        .insta-img {
+            position: relative;
+            width: 23px;
+            left: -42px;
+            top: 54px;
+        }
+
+        .phone-img {
+            position: relative;
+            width: 18px;
+            top: 75px;
+            left: -67px;
+        }
+
+        .git-img {
+            position: relative;
+            width: 20px;
+            left: -90px;
+            top: 100px;
+        }
+
+        .footer h3 {
+            color: rgb(85 26 139);
+        }
+
+        .rightSection img{
+            width: 90%;
+            height: auto;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="left">Parth's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="#middle-section">About</a></li>
+                    <li><a href="https://github.com/parthCJ">Projects</a></li>
+                    <li><a href="#last-section">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection">
+
+            <div class="leftSection">
+
+                Hi, my name is <span class="purple">Parth</span>
+
+                <div>and I am a passionate </div>
+                <!-- <div>Software Developer</div> -->
+                <span id="element"></span>
+                <div class="buttons">
+                    <a href="https://drive.google.com/file/d/1VZ822aEHZPSbBnwhNnI8vwwEvDNXtaKH/view?usp=sharing">
+                        <button class="btn">Download Resume</button>
+                    </a>
+                    <a href="https://github.com/parthCJ ">
+                        <button class="btn">Github</button>
+                    </a>
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="pro-pic2.png" alt="">
+            </div>
+        </section>
+        <hr>
+        <section class="secondSection" id="middle-section">
+            <span class="textGray">What I have done so far</span>
+            <h1 class="work-exp">Work Experience</h1>
+
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="c++.png" alt="">
+                    <div class="vertical-title">
+                        C++ Developer(2020-2021)
+                    </div>
+                    <div class="vertical-desc">
+                        I started my C++ journey with basic syntax, then progressed to object-oriented programming and
+                        core concepts. I focused heavily on DSA development, mastering arrays, linked lists, stacks,
+                        queues, trees, and algorithms. I applied my skills in real-world projects like a Snake Game and
+                        also converted Python projects to C++, enhancing my problem-solving and development
+                        capabilities.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="Python.png" alt s style="top: -27px;
+                    position: relative;
+                    width: 19px;
+                    left: -8px;">
+
+                    <div class="vertical-title">
+                        Python Developer(2021-2022)
+                    </div>
+                    <div class="vertical-desc">
+                        I began my Python journey by learning the fundamentals like variables, loops, and functions,
+                        then advanced to working with libraries such as requests, json, and turtle. I developed
+                        real-world projects like an ISS Tracker and a Snake Game, structured with multiple modules. I
+                        explored backend development, API integration.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="game.png" alt style="position: relative;
+                    top: -31px;
+                    left: -14px;
+                    width: 31px;">
+                    <div class="vertical-title">
+                        Game Developer(2022-2023)
+                    </div>
+                    <div class="vertical-desc">
+                        My Game Development journey began with a passion for interactive design and logic, focusing on
+                        object-oriented principles and modular design. As I progressed, I explored advanced engines like
+                        Unreal Engine 5, aiming to build immersive experiences such as Physics mechanics and character
+                        animations. This journey allowed me to blend creativity with code, expanding my skills in
+                        gameplay mechanics, UI/UX, and real-time data integration in games.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="embedded.png" alt style="position: relative;
+                    position: relative;
+                    top: -28px;
+                    left: -9px;
+                    width: 21px;">
+                    <div class="vertical-title">
+                        Embedded Systems(2023-2024)
+                    </div>
+                    <div class="vertical-desc">
+                        My Embedded Systems journey began with hands-on experimentation using Arduino and Embedded C++.
+                        I built projects like an LED blinking system and explored interfacing sensors like ultrasonic
+                        modules. I focused on understanding microcontroller programming, circuit logic, and real-world
+                        hardware control. This journey helped me bridge the gap between software and hardware, sparking
+                        my interest in IoT and real-time embedded applications.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="ai.png" alt style="
+                    width: 30px;
+                    position: relative;
+                    top: -36px;
+                    left: -15px;">
+                    <div class="vertical-title">
+                        AI Development(2024-2025)
+                    </div>
+                    <div class="vertical-desc">
+                        My GenAI journey started with exploring language models and quickly evolved into building
+                        intelligent tools using frameworks like LangChain, Streamlit, and ChromaDB. I developed advanced
+                        applications such as a Cold Email Generator and a news-based QA chatbot, integrating LLMs like
+                        Llama for real-time, reference-backed responses. I focused on combining AI reasoning with
+                        practical use cases, mastering prompt engineering & RAG technique
+                    </div>
+                </div>
+
+                <div class="vertical"></div>
+                <div class="vertical"></div>
+                <div class="vertical"></div>
+
+            </div>
+
+        </section>
+    </main>
+
+    <footer id="last-section">
+        <div class="footer">
+            <div class="footer-first"></div>
+            <h3>Parth's Developer Portfolio</h3>
+            <div class="footer-second">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="#middle-section">About</a></li>
+                    <li><a href="https://github.com/parthCJ">Projects</a></li>
+                    <li><a href="#last-section">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-third">
+                <ul>
+                    <img class="linked-img" src="/linkedin.png" alt="">
+                    <img class="insta-img" src="/insta.png" alt="">
+                    <img class="phone-img" src="/phone.png" alt="">
+                    <img class="git-img" src="/github.png" alt="">
+                    <li><a href="https://www.linkedin.com/in/parthsharmacj/">LinkedIn</a></li>
+                    <li><a href="/">Instagram</a></li>
+                    <li><a href="/">Ph: 9468999789</a></li>
+                    <li><a href="https://github.com/parthCJ">GitHub</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Software Developer,', 'AI Developer.',],
+            typeSpeed: 30,
+        });
+    </script>
+</body>
+
+</html>
