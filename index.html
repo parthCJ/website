@@ -45,7 +45,7 @@
 
         nav ul li a {
             text-decoration: none;
-            color: white;
+            color: rgb(17, 1, 1);
         }
 
         nav ul li a:hover {
@@ -108,9 +108,9 @@
         }
 
         .secondSection {
-            max-width: 80vw;
+            max-width: 87vw;
             margin: auto;
-            height: 100vh;
+            height: 130vh;
         }
 
         .secondSection .box {
@@ -125,7 +125,7 @@
             height: 93px;
             width: 1px;
             background-color: white;
-            margin: 0 120px;
+            margin: 0 110px;
 
         }
 
@@ -170,6 +170,7 @@
         .footer-second {
             position: relative;
             top: 2px;
+            left: -14px;
         }
 
         .footer-third {
@@ -235,20 +236,99 @@
             height: auto;
         }
 
+    .side-bar{
+        position: fixed;
+        top: 0;
+        right : 0;
+        height: 100vh;
+        width: 250px;
+        z-index: 999;
+        background-color: rgba(255, 255, 255, 0.422);
+        backdrop-filter: blur(10px);
+        box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    
+    .side-bar li{
+        width: 100%
+    }
+
+    .side-bar a{
+        width: 100%
+    }
+
+
+    @media(max-width: 600px){
+        .hideOnMobile{
+            display: none;
+        }
+    }
+    
+    @media(max-width: 600px){
+        .btn{
+            width: 100%;
+            margin: 0 10px;
+            padding: 10px 0;
+        }
+    }
+
+    @media(max-width: 600px){
+        .line{
+            margin: 0 10px;
+            width: 90%;
+        }
+    }
+    
+    @media(max-width: 600px){
+        .footer-first{
+            position: relative;
+            left: -10px;
+        }
+    }
+
+    @media(max-width: 600px){
+        .footer-second{
+            position: relative;
+            top: 2px;
+            left: 14px;
+        }
+    }
+
+    @media(max-width: 600px){
+        .footer-third{
+            position: relative;
+            top: -29px;
+            left: 70px
+        }
+    }
+
     </style>
 </head>
 
 <body>
+    
 
     <header>
         <nav>
             <div class="left">Parth's Portfolio</div>
             <div class="right">
-                <ul>
+                <ul class="side-bar">
+                    <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
                     <li><a href="/">Home</a></li>
                     <li><a href="#middle-section">About</a></li>
                     <li><a href="https://github.com/parthCJ">Projects</a></li>
                     <li><a href="#last-section">Contact</a></li>
+                </ul>
+
+                <ul>
+                    <li class="hideOnMobile"><a href="/">Home</a></li>
+                    <li class="hideOnMobile"><a href="#middle-section">About</a></li>
+                    <li class="hideOnMobile"><a href="https://github.com/parthCJ">Projects</a></li>
+                    <li class="hideOnMobile"><a href="#last-section">Contact</a></li>
+                    <li onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>   </a></li>
                 </ul>
             </div>
         </nav>
@@ -277,7 +357,7 @@
                 <img src="pro-pic-fotor-2025042423132.png" alt="">
             </div>
         </section>
-        <hr>
+        <hr class="line">
         <section class="secondSection" id="middle-section">
             <span class="textGray">What I have done so far</span>
             <h1 class="work-exp">Work Experience</h1>
@@ -405,6 +485,16 @@
             strings: ['Software Developer,', 'AI Developer.',],
             typeSpeed: 30,
         });
+
+        function showSidebar(){
+            const sidebar = document.querySelector('.side-bar');
+            sidebar.style.display = 'flex';
+        }
+
+        function hideSidebar(){
+            const sidebar = document.querySelector('.side-bar');
+            sidebar.style.display = 'none';
+        }
     </script>
 </body>
 
