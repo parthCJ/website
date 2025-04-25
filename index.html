@@ -231,101 +231,104 @@
             color: rgb(85 26 139);
         }
 
-        .rightSection img{
+        .rightSection img {
             width: 90%;
             height: auto;
         }
 
-    .side-bar{
-        position: fixed;
-        top: 0;
-        right : 0;
-        height: 100vh;
-        width: 250px;
-        z-index: 999;
-        background-color: rgba(255, 255, 255, 0.422);
-        backdrop-filter: blur(10px);
-        box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
-        display: none;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: flex-start;
-        
-        
-    }
-    
-    .side-bar li{
-        width: 100%
-    }
-
-    .side-bar a{
-        width: 100%
-    }
-
-
-    @media(max-width: 800px){
-        .hideOnMobile{
+        .side-bar {
+            position: fixed;
+            top: 0;
+            right: 0;
+            height: 100vh;
+            width: 250px;
+            z-index: 999;
+            background-color: rgba(255, 255, 255, 0.422);
+            backdrop-filter: blur(10px);
+            box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
             display: none;
-        }
-    }
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
 
-    @media(max-width: 800px){
-        .btn{
-            width: 100%;
-            margin: 0 10px;
-            padding: 10px 0;
-        }
-    }
 
-    @media(max-width: 800px){
-        .line{
-            margin: 0 10px;
-            width: 90%;
         }
-    }
-    
-    @media(max-width: 800px){
-        .footer-first{
-            position: relative;
-            left: -10px;
-        }
-    }
 
-    @media(max-width: 800px){
-        .footer-second{
-            position: relative;
-            top: 2px;
-            left: 14px;
+        .side-bar li {
+            width: 100%
         }
-    }
 
-    @media(max-width: 800px){
-        .footer-third{
-            position: relative;
-            top: -29px;
-            left: 70px
+        .side-bar a {
+            width: 100%
         }
-    }
-    
 
-    @media(max-width: 800px){
-        .secondSection .box{
-            background-color: #0f0f2e;
+
+        @media(max-width: 800px) {
+            .hideOnMobile {
+                display: none;
+            }
         }
-    }
 
+        @media(max-width: 800px) {
+            .btn {
+                width: 100%;
+                margin: 0 10px;
+                padding: 10px 0;
+            }
+        }
+
+        @media(max-width: 800px) {
+            .line {
+                margin: 0 10px;
+                width: 90%;
+            }
+        }
+
+        @media(max-width: 800px) {
+            .footer-first {
+                position: relative;
+                left: -10px;
+            }
+        }
+
+        @media(max-width: 800px) {
+            .footer-second {
+                position: relative;
+                top: 2px;
+                left: 14px;
+            }
+        }
+
+        @media(max-width: 800px) {
+            .footer-third {
+                position: relative;
+                top: -29px;
+                left: 70px
+            }
+        }
+
+
+        @media(max-width: 800px) {
+            .secondSection .box {
+                background-color: #0f0f2e;
+            }
+        }
     </style>
 </head>
 
 <body>
-    
+
 
     <header>
         <nav>
             <div class="left">Parth's Portfolio</div>
             <div class="right">
                 <ul class="side-bar">
-                    <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                    <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                                viewBox="0 -960 960 960" width="24px" fill="#1f1f1f">
+                                <path
+                                    d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                            </svg></a></li>
                     <li><a href="/">Home</a></li>
                     <li><a href="#middle-section">About</a></li>
                     <li><a href="https://github.com/parthCJ">Projects</a></li>
@@ -337,7 +340,10 @@
                     <li class="hideOnMobile"><a href="#middle-section">About</a></li>
                     <li class="hideOnMobile"><a href="https://github.com/parthCJ">Projects</a></li>
                     <li class="hideOnMobile"><a href="#last-section">Contact</a></li>
-                    <li onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>   </a></li>
+                    <li onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                                viewBox="0 -960 960 960" width="24px" fill="#1f1f1f">
+                                <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                            </svg> </a></li>
                 </ul>
             </div>
         </nav>
@@ -363,7 +369,8 @@
                 </div>
             </div>
             <div class="rightSection">
-                <img src="pro-pic-fotor-2025042423132.png" alt="">
+                <img src="pro-pic-fotor-2025042423132.png" alt style="position: relative;
+    top: -120px;">
             </div>
         </section>
         <hr class="line">
@@ -495,12 +502,12 @@
             typeSpeed: 30,
         });
 
-        function showSidebar(){
+        function showSidebar() {
             const sidebar = document.querySelector('.side-bar');
             sidebar.style.display = 'flex';
         }
 
-        function hideSidebar(){
+        function hideSidebar() {
             const sidebar = document.querySelector('.side-bar');
             sidebar.style.display = 'none';
         }
