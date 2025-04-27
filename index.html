@@ -113,13 +113,7 @@
             height: 105vh;
         }
 
-        @media(max-width: 800px) {  
-            .secondSection {
-                max-width: 80vw;
-                margin: auto;
-                height: 265vh;
-            }
-        }
+
 
         .secondSection .box {
             background-color: white;
@@ -137,11 +131,7 @@
 
         }
 
-        @media(max-width: 800px) {
-            .secondSection .vertical {
-                width: 0px;
-            }
-        }
+
 
         .secondSection hr {
             font-size: 1.9rem;
@@ -170,12 +160,7 @@
             left: -8px;
         }
 
-        @media(max-width: 800px) {
-            .image-top {
-                display: none
-            }
 
-        }
 
         footer {
             background-color: #0d0d26;
@@ -193,7 +178,7 @@
         .footer-second {
             position: relative;
             top: 38px;
-            left: -192px;
+            left: -257px;
         }
 
         .footer-third {
@@ -291,15 +276,50 @@
             width: 100%
         }
 
+        .floating-profile img {
+            width: 439px;
+            height: auto;
+            position: relative;
+            left: 490px;
+            top: 324px;
+            animation: float 3s ease-in-out infinite;
+        }
 
-        @media(min-width: 800px) {
-            .secondSection.vertical {
-                position: relative;
-                width: 0px
+        @keyframes float {
+            0% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-15px);
+            }
+
+            100% {
+                transform: translateY(0px);
             }
         }
 
         @media(max-width: 800px) {
+
+            .secondSection {
+                max-width: 80vw;
+                margin: auto;
+                height: 265vh;
+            }
+
+            .secondSection .vertical {
+                width: 0px;
+            }
+
+            .image-top {
+                display: none
+            }
+
+            .secondSection.vertical {
+                position: relative;
+                width: 0px
+            }
+
             .leftSection .btn {
                 background-color: #0f0f2e;
                 background-image: url(footer-bg.jpg);
@@ -310,62 +330,43 @@
                 padding: 11px;
                 width: 216px
             }
-        }
 
-        @media(max-width: 800px) {
             .hideOnMobile {
                 display: none;
             }
-        }
 
-
-        @media(max-width: 800px) {
             .line {
                 margin: 0 10px;
                 position: relative;
                 width: 1185px
             }
-        }
 
-        @media(max-width: 800px) {
             .footer-first {
                 position: relative;
                 left: -10px;
             }
-        }
 
-        @media(max-width: 800px) {
             footer {
                 position: relative;
                 height: 264px;
             }
-        }
 
-        @media(max-width: 800px) {
             .footer-second {
                 position: relative;
                 top: 2px;
                 left: 14px;
             }
-        }
 
-        @media(max-width: 800px) {
             .footer-third {
                 position: relative;
                 top: -29px;
                 left: 70px
             }
-        }
 
-
-        @media(max-width: 800px) {
             .secondSection .box {
                 background-color: #0f0f2e;
             }
-        }
 
-
-        @media(max-width: 800px) {
             .cpp-dev-title {
                 position: relative;
                 top: -102px;
@@ -476,6 +477,10 @@
     <header>
         <nav>
             <div class="left">Parth's Portfolio</div>
+            <div class="floating-profile">
+                <img src="pro-pic-fotor-2025042423132.png" alt="Profile Picture">
+            </div>
+
             <div class="right">
                 <ul class="side-bar">
                     <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
@@ -656,7 +661,7 @@
     <footer id="last-section">
         <div class="footer">
             <div class="footer-first"></div>
-            <h3>Parth's Developer Portfolio</h3>
+            <h3>Parth's Developer Portfolio | parthsharmacj@gmail.com</h3>
             <div class="footer-second">
                 <ul>
                     <li><a href="">Home</a></li>
